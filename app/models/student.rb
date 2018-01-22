@@ -12,6 +12,7 @@ class Student < ActiveRecord::Base
   end
 
   def active=(value)
+    @active = false
     @active = value
   end
 end
