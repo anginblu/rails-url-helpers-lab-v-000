@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
 
   def activate
     set_student
-    @student.update(active = !@student.active)
+    @student.update(active: !@student.active)
     redirect_to "/students/#{@student.id}"
   end
 
