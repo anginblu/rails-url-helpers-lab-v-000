@@ -11,4 +11,5 @@ class Student < ActiveRecord::Base
 
   def active=(@active)
     @active
+  end
 end
