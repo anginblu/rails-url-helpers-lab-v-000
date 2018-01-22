@@ -9,5 +9,5 @@ class Student < ActiveRecord::Base
     @active
   end
 
-  def active=
+  def active=(@active)
 end
