@@ -4,7 +4,7 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def active=(value)
+  def active=(value=false)
     @active = value
   end
 
