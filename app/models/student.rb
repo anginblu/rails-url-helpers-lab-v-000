@@ -6,6 +6,6 @@ class Student < ActiveRecord::Base
   end
 
   def active(value = false)
-    false
+    value
   end
 end
