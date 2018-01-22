@@ -11,7 +11,7 @@ class Student < ActiveRecord::Base
     @active
   end
 
-  def active=(@active)
+  def active=(value)
     @active
   end
 end
