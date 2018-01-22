@@ -6,6 +6,6 @@ class Student < ActiveRecord::Base
   end
 
   def active
-    default value = value
+    default value = false
   end
 end
