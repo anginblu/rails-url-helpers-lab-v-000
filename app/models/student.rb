@@ -4,11 +4,11 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def active
-    @active
-  end
-
   def active=(value = false)
     @active = value
+  end
+  
+  def active
+    @active
   end
 end
