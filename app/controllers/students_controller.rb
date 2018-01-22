@@ -12,7 +12,6 @@ class StudentsController < ApplicationController
   def activate
     set_student
     !@student.active.save
-    @student.save
     redirect_to "/students/#{@student.id}"
   end
 
