@@ -6,6 +6,8 @@ class Student < ActiveRecord::Base
   end
 
   def active
-    @active 
+    @active
   end
+
+  def active=
 end
