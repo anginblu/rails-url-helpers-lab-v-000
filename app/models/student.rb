@@ -4,6 +4,6 @@ class Student < ActiveRecord::Base
   end
 
   def active
-
+    false
   end
 end
