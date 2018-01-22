@@ -1,5 +1,5 @@
 class Student < ActiveRecord::Base
-
+  attr_accessor :active, :default => false
   def to_s
     self.first_name + " " + self.last_name
   end
@@ -7,7 +7,7 @@ class Student < ActiveRecord::Base
   # def active=(value=false)
   #   @active = value
   # end
-  # 
+  #
   # def active
   #   if @active == nil
   #     false
