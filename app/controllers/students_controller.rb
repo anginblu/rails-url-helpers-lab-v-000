@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
 
   def activate_student
     set_student
-    !@student.active
+    @student.active
     @student.save
     render "show"
   end
