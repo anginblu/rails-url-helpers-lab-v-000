@@ -6,7 +6,7 @@ class Student < ActiveRecord::Base
   end
 
   def active
-    @active unless @active == nil
+    @active if @active == nil
   end
 
 end
