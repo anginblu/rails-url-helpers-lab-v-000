@@ -11,6 +11,8 @@ class StudentsController < ApplicationController
 
   def activate
     set_student
+    @student.active = true
+    @student.save
     render "show"
   end
 
